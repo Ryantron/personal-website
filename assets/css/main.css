@@ -140,10 +140,10 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 400px) {
 
 			body, input, select, textarea {
-				font-size: 16pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -2525,7 +2525,7 @@ input, select, textarea {
 		height: 3.5em;
 		letter-spacing: 0.25em;
 		line-height: 3.5em;
-		padding: 0 1.75em;
+		padding: 0 1em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
