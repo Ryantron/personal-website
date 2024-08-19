@@ -2947,7 +2947,7 @@ input, select, textarea {
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				/* width: 30%; */
 			}
 
 				.spotlights > section > .image img {
@@ -3013,7 +3013,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .image {
-				width: 40%;
+				width: 30%;
 			}
 
 			.spotlights > section > .content {
@@ -3025,7 +3025,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.spotlights > section > .image {
-				width: 45%;
+				width: 40%;
 			}
 
 			.spotlights > section > .content {
@@ -3041,7 +3041,9 @@ input, select, textarea {
 			}
 
 				.spotlights > section > .image {
-					width: 100%;
+					margin-left: auto;
+ 			  	margin-right: auto;
+					width: 50%;
 				}
 
 				.spotlights > section > .content {
@@ -3053,10 +3055,23 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.spotlights > section > .image {
+				margin-left: auto;
+ 			  margin-right: auto;
+				width: 70%;
+			}
+
 			.spotlights > section > .content {
 				padding: 3em 1.5em 1em 1.5em ;
 			}
 
+		}
+
+		@media screen and (max-width: 500px) {
+
+			.spotlights > section > .image {
+				width: 100%;
+			}
 		}
 
 /* Header */
