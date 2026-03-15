@@ -21,28 +21,8 @@
 <body class="is-preload">
   <!-- Wrapper -->
   <div id="wrapper">
-    <!-- Header -->
-    <header id="header" class="alt">
-      <a href="/" class="logo"><strong>Home</strong> <span>Ryan Lee</span></a>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <ul class="links">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1j5pTY76qOED7tI0Y2zBhXas00apVHmEx">Resume</a></li>
-      </ul>
-      <!-- <ul class="actions stacked">
-								<li><a href="#" class="button primary fit">Get Started</a></li>
-								<li><a href="#" class="button fit">Log In</a></li>
-							</ul> -->
-    </nav>
+    <!-- Shared Header + Menu -->
+    <div data-component="site-header" data-header-class="alt"></div>
 
     <!-- Main -->
     <div id="main" class="alt">
@@ -52,16 +32,12 @@
           <header class="major">
             <h1>About</h1>
           </header>
-          <span class="image main"><img src="images/pic11.jpg" alt="Ryan at a pickleball court with people"></span>
+          <span class="image main"><img src="images/ryan2.jpg" alt="Ryan at a pickleball court with people"></span>
           <p>
-            I am Ryan Lee, a senior computer science student at Stevens
-            Institute of Technology. My journey has been enriched with
-            experiences in web development, systems programming, and team
-            leadership. Now, I turn to data science as an aspiring data
-            analyst/scientist. I am interested in utilizing data science,
-            machine learning, and predictive analytics to solve problems
-            across all domains. Currently part of the Headstarter AI software
-            engineering fellowship with my peers!
+            I am Ryan Lee, a Stevens Institute of Technology alumnus with a Bachelor of Science in Computer Science. My
+            journey has been enriched with experiences in web development, systems programming, and team leadership.
+            Now, I turn to data science as an aspiring data analyst/scientist. I am interested in utilizing data
+            science, machine learning, and predictive analytics to solve problems across all domains.
           </p>
           <p>
             My core values are teamwork, open communication, and diverse
@@ -71,23 +47,33 @@
             achievements!
           </p>
           <p>
-            Outside of work, I love to read manga, watch anime, and play
-            pickleball. I am still an amateur, so I still have a lot to learn and develop like 3rd shot drops and
-            drives. I prefer pickleball over badminton, and one of the reasons is that I can play pickleball better
-            outdoors.
-            I enjoy exploring artist discographies too! Magdalena Bay's 2nd studio album, "Imaginal Disk", is 2024 album
-            of the year for me. Take a peek at it!
+            Outside of work, I love to play pickleball, read manga, and play PC games. My main pickleball paddle is the
+            Vatic Pro Saga Bloom 16mm, which emphasizes control and spin.
+            Recently, I upgraded from the soft-touch Vatic Pro Saga Bloom 16mm to the Bread & Butter Loco 16mm standard
+            paddle to unlock explosive offensive power while maintaining the high spin I rely on to shape my shots. This
+            2025 standout paddle utilizes Gen 4 dual-density foam technology—a floating EPP core surrounded by an EVA
+            foam perimeter—to deliver elite stability and a poppy, energetic response at a competitive price point.
+            Pickleball technology advances on a weekly basis as manufacturers constantly refine thermoforming processes
+            and composite fiber layups to squeeze every bit of performance out of modern equipment.
           </p>
+          <p>
+            I enjoy exploring artist discographies too! CASIOPEA's debut studio album, "Casiopea", is the 2025 album
+            of the year for me. It's jazz fusion that blends intricate jazz harmonies with infectious, high-energy
+            funk rhythms. The magic is how Casiopea makes complex instrumentals accessible and enjoyable.
+            Take a peek at it! The YouTube Music and Spotify links to the album are below.
+          </p>
+          <div style="text-align: center;">
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_mz5ZjDR5FznEVv6VEEReB4rYxKfV7f5aY" target="_blank">
+              🎵 View Album on YouTube Music
+            </a>
+          </div>
         </div>
-        <div class="media-container">
-          <iframe style="border-radius:12px;"
-            src="https://open.spotify.com/embed/album/4HTy9WFTYooRjE9giTmzAF?utm_source=generator" frameborder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-          </iframe>
 
-          <iframe style="border-radius:12px;" src="https://www.youtube.com/embed/OPe7tn_Hju4" frameborder="0"
-            allow="autoplay; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-          </iframe>
+        <div class="media-container">
+          <iframe data-testid="embed-iframe" style="border-radius:12px;"
+            src="https://open.spotify.com/embed/album/3uFgYgCEvCSACjB8XHl3hb?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -105,72 +91,8 @@
       </section>
     </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="inner">
-        <form action="https://formsubmit.co/b7f000260506e96ac8b4eff407ce720f" method="POST">
-          <div class="fields">
-            <div class="field half">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required>
-            </div>
-            <div class="field half">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" required>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="6" required></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li>
-              <input type="submit" value="Send Message" class="primary">
-            </li>
-            <li><input type="reset" value="Clear"></li>
-          </ul>
-        </form>
-        <section class="split">
-          <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>Email</h3>
-            <span>ryanoaklandgardens@gmail.com</span>
-          </div>
-          <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>Location</h3>
-            <span>Oakland Gardens, NY</span>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="inner">
-        <ul class="icons">
-          <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-          <li>
-            <a href="https://www.instagram.com/noscros/" class="icon brands alt fa-instagram"><span
-                class="label">Instagram</span></a>
-          </li>
-          <li>
-            <a href="https://github.com/Ryantron/" class="icon brands alt fa-github"><span
-                class="label">GitHub</span></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/ryanleecs/" class="icon brands alt fa-linkedin-in"><span
-                class="label">LinkedIn</span></a>
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>Copyright &copy; 2024 Ryan Lee</li>
-          <li>All Rights Reserved</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </footer>
+    <!-- Shared Contact + Footer -->
+    <div data-component="site-contact-footer" data-submit-label="Send Message"></div>
   </div>
 
   <!-- Scripts -->
@@ -180,6 +102,7 @@
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
+  <script src="assets/js/layout-components.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

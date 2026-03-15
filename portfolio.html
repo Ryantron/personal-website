@@ -21,44 +21,22 @@
 <body class="is-preload">
   <!-- Wrapper -->
   <div id="wrapper">
-    <!-- Header -->
-    <!-- Note: The "styleN" class below should match that of the banner element. -->
-    <header id="header" class="alt style2">
-      <a href="/" class="logo"><strong>Home</strong> <span>Ryan Lee</span></a>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <ul class="links">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1j5pTY76qOED7tI0Y2zBhXas00apVHmEx">Resume</a></li>
-      </ul>
-      <!-- <ul class="actions stacked">
-								<li><a href="#" class="button primary fit">Get Started</a></li>
-								<li><a href="#" class="button fit">Log In</a></li>
-							</ul> -->
-    </nav>
+    <!-- Shared Header + Menu -->
+    <div data-component="site-header" data-header-class="alt style2"></div>
 
     <!-- Banner -->
     <!-- Note: The "styleN" class below should match that of the header element. -->
     <section id="banner" class="style2">
       <div class="inner">
         <span class="image">
-          <img src="images/pic07.jpg" alt="Manhattan, New York street">
+          <img src="images/city-view.jpg" alt="Manhattan, New York street">
         </span>
         <header class="major">
           <h1>Portfolio</h1>
         </header>
         <div class="content">
           <p>
-            My projects over the years!<br>
-            I will be adding more soon.
+            My projects over the years!
           </p>
         </div>
       </div>
@@ -87,7 +65,33 @@
       <!-- Two -->
       <section id="two" class="spotlights">
         <section>
-          <a href="https://github.com/Ryantron/ai-rate-professor" class="image">
+          <a href="https://leakage-detector.vercel.app/" class="image">
+            <img src="images/data-models.jpg" alt="Man touches hologram of AI and data models"
+              data-position="center center">
+          </a>
+          <div class="content">
+            <div class="inner">
+              <header class="major">
+                <h2>Data Leakage Detector</h2>
+              </header>
+              <p>
+                Collaborated with a senior design team to develop a VS Code extension for our university capstone
+                project that identifies and corrects machine learning data leakage in Jupyter Notebooks through
+                algorithmic and LLM-driven "Quick Fix" mechanisms.
+              </p>
+              <ul class="actions stacked">
+                <li><a href="https://marketplace.visualstudio.com/items/?itemName=leakage-detector.data-leakage"
+                    class="button">Deployment</a></li>
+                <li><a href="https://leakage-detector.vercel.app/" class="button">Documentation</a></li>
+                <li><a href="https://github.com/SE4AIResearch/DataLeakage_JupyterNotebook_Fall2024/"
+                    class="button">Codebase</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a href="https://ai-rate-professor-iota.vercel.app/" class="image">
             <img src="images/ratemyprof.jpg" alt="College campus with students walking around"
               data-position="center center">
           </a>
@@ -102,17 +106,16 @@
                 professors and courses.
               </p>
               <ul class="actions stacked">
-                <li><a href="https://github.com/Ryantron/ai-rate-professor" class="button">Learn more</a></li>
                 <li><a href="https://ai-rate-professor-iota.vercel.app/" class="button">Deployment</a></li>
+                <li><a href="https://github.com/Ryantron/ai-rate-professor" class="button">Codebase</a></li>
               </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <a href="https://github.com/Ryantron/flashcard-saas" class="image">
-            <img src="images/studying.jpg" alt="Person studying at a desk"
-              data-position="center center">
+          <a href="https://flashcard-saas-mu.vercel.app/" class="image">
+            <img src="images/studying.jpg" alt="Person studying at a desk" data-position="center center">
           </a>
           <div class="content">
             <div class="inner">
@@ -125,8 +128,8 @@
                 Stripe.
               </p>
               <ul class="actions stacked">
-                <li><a href="https://github.com/Ryantron/flashcard-saas" class="button">Learn more</a></li>
                 <li><a href="https://flashcard-saas-mu.vercel.app/" class="button">Deployment</a></li>
+                <li><a href="https://github.com/Ryantron/flashcard-saas" class="button">Codebase</a></li>
               </ul>
             </div>
           </div>
@@ -134,7 +137,7 @@
 
         <section>
           <a href="https://github.com/Ryantron/anime_site" class="image">
-            <img src="images/pic08.jpg" alt="Anime recommendation website showing recommendation list"
+            <img src="images/anime-site.jpg" alt="Anime recommendation website showing recommendation list"
               data-position="center center">
           </a>
           <div class="content">
@@ -150,7 +153,7 @@
                 recommendations.
               </p>
               <ul class="actions stacked">
-                <li><a href="https://github.com/Ryantron/anime_site" class="button">Learn more</a></li>
+                <li><a href="https://github.com/Ryantron/anime_site" class="button">Codebase</a></li>
                 <li><a href="https://drive.google.com/drive/u/0/folders/1crA3mZ_R0o9eWWRIRuIyhJUL3HN42HE8"
                     class="button">Documentation</a></li>
               </ul>
@@ -160,7 +163,7 @@
 
         <section>
           <a href="https://github.com/Ryantron/virtual-cpu" class="image">
-            <img src="images/pic09.jpg" alt="Virtual CPU blueprint" data-position="top center">
+            <img src="images/cpu-logism.jpg" alt="Virtual CPU blueprint" data-position="top center">
           </a>
           <div class="content">
             <div class="inner">
@@ -173,7 +176,7 @@
                 showcase proficiency in computer architecture.
               </p>
               <ul class="actions">
-                <li><a href="https://github.com/Ryantron/virtual-cpu" class="button">Learn more</a></li>
+                <li><a href="https://github.com/Ryantron/virtual-cpu" class="button">Codebase</a></li>
               </ul>
             </div>
           </div>
@@ -181,7 +184,7 @@
 
         <section>
           <a href="https://github.com/Ryantron/courtyard-tile" class="image">
-            <img src="images/pic10.jpg" alt="Colorful graphical representation of a tiled courtyard"
+            <img src="images/courtyard-tile.jpg" alt="Colorful graphical representation of a tiled courtyard"
               data-position="25% 25%">
           </a>
           <div class="content">
@@ -196,7 +199,7 @@
                 representation.
               </p>
               <ul class="actions">
-                <li><a href="https://github.com/Ryantron/courtyard-tile" class="button">Learn more</a></li>
+                <li><a href="https://github.com/Ryantron/courtyard-tile" class="button">Codebase</a></li>
               </ul>
             </div>
           </div>
@@ -217,73 +220,8 @@
       </section>
     </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="inner">
-        <form action="https://formsubmit.co/b7f000260506e96ac8b4eff407ce720f" method="POST">
-          <div class="fields">
-            <div class="field half">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required>
-            </div>
-            <div class="field half">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" required>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="6" required></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li>
-              <input type="submit" value="Send Email" class="primary">
-            </li>
-            <li><input type="reset" value="Clear"></li>
-          </ul>
-        </form>
-        <section class="split">
-          <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>Email</h3>
-            <span>ryanoaklandgardens@gmail.com</span>
-          </div>
-
-          <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>Location</h3>
-            <span>Oakland Gardens, NY</span>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="inner">
-        <ul class="icons">
-          <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-          <li>
-            <a href="https://www.instagram.com/noscros/" class="icon brands alt fa-instagram"><span
-                class="label">Instagram</span></a>
-          </li>
-          <li>
-            <a href="https://github.com/Ryantron/" class="icon brands alt fa-github"><span
-                class="label">GitHub</span></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/ryanleecs/" class="icon brands alt fa-linkedin-in"><span
-                class="label">LinkedIn</span></a>
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>Copyright &copy; 2024 Ryan Lee</li>
-          <li>All Rights Reserved</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </footer>
+    <!-- Shared Contact + Footer -->
+    <div data-component="site-contact-footer" data-submit-label="Send Message"></div>
   </div>
 
   <!-- Scripts -->
@@ -293,6 +231,7 @@
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
+  <script src="assets/js/layout-components.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
